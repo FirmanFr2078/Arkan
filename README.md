@@ -4,7 +4,7 @@
 
 Sebuah inovasi *dashboard* administrasi terpadu untuk digitalisasi birokrasi dan rekam jejak program kerja Takmir Masjid Nurul Iman MAN Kota Blitar.
 
----
+
 
 ## 🏛️ Filosofi Utama
 
@@ -14,7 +14,7 @@ Masjid Nurul Iman adalah bangunannya, dan niat baik para Takmir adalah fondasiny
 
 **Arkan hadir sebagai pilar digital tersebut.** Bukan sekadar kumpulan data, melainkan tiang penyangga yang memastikan setiap *rekam karya* dan *administrasi* pengurus tersusun cepat, rapi, dan transparan demi kemakmuran masjid.
 
----
+
 
 ## 📖 Latar Belakang
 
@@ -22,7 +22,7 @@ Sebagai pusat kegiatan spiritual dan keagamaan di MAN Kota Blitar, mobilitas Tak
 
 Dari keresahan tersebut, lahirlah inovasi bernama **Arkan**. Kami menyadari bahwa teknologi tidak hanya milik ruang kelas, tapi juga milik ruang takmir. Arkan dibangun secara khusus untuk meng-*akselerasi* birokrasi dan merekam setiap *karya* kepengurusan ke dalam satu *dashboard* digital. Dengan Arkan, pengurus terbebas dari tumpukan kertas dan proses manual, sehingga bisa lebih fokus pada tujuan utama: melayani umat dan memakmurkan masjid.
 
----
+
 
 ## ❓ Frequently Asked Questions (FAQ)
 
