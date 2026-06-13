@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# ======================================================================
+# 1. PENGATURAN BASE URL (TROUBLESHOOTING INFINITYFREE)
+# ======================================================================
+# Jika setelah di-upload ke hosting (InfinityFree) website mengalami 
+# Error 500 (Internal Server Error) atau Error 404 (Not Found), 
+# hapus tanda pagar (#) pada baris RewriteBase di bawah ini:
+
+# RewriteBase /
+
+# ======================================================================
+# 2. REDIRECT INDEX.PHP KE ROOT
+# ======================================================================
+# Jika user tidak sengaja mengakses http://domain.com/index.php,
+# arahkan kembali ke URL bersih http://domain.com/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ / [R=301,L]
+
+# ======================================================================
+# 3. ATURAN ROUTING CLEAN URL
+# ======================================================================
+# Abaikan file atau folder yang benar-benar ada secara fisik di server
+# (seperti folder /assets, file CSS, JS, atau gambar) agar tetap bisa diakses.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Ubah URL /halaman menjadi /index.php?page=halaman secara internal
+RewriteRule ^([^/]+)/?$ index.php?page=$1 [L,QSA]

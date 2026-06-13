@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* ==========================================================
+   1. MAPPING TAILWIND V4 (@theme inline)
+   ========================================================== */
+@theme inline {
+  /* --- PUBLIC FACING (Normal) --- */
+  --color-background: var(--background);
+  --color-background-1: var(--background-1);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --color-layer: var(--layer);
+  --color-muted: var(--muted);
+  --color-destructive: var(--destructive);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-active: var(--primary-active);
+  --color-secondary: var(--secondary);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+
+  /* --- AUTHENTICATION (Prefix: auth-) --- */
+  --color-auth-background: var(--auth-background);
+  --color-auth-background-1: var(--auth-background-1);
+  --color-auth-foreground: var(--auth-foreground);
+  --color-auth-foreground-muted: var(--auth-foreground-muted);
+  --color-auth-border: var(--auth-border);
+  --color-auth-surface: var(--auth-surface);
+  --color-auth-layer: var(--auth-layer);
+  --color-auth-muted: var(--auth-muted);
+  --color-auth-destructive: var(--auth-destructive);
+  --color-auth-primary: var(--auth-primary);
+  --color-auth-primary-hover: var(--auth-primary-hover);
+  --color-auth-primary-active: var(--auth-primary-active);
+  --color-auth-secondary: var(--auth-secondary);
+  --color-auth-card: var(--auth-card);
+  --color-auth-card-border: var(--auth-card-border);
+
+  /* --- DASHBOARD ADMIN (Prefix: ds-) --- */
+  --color-ds-background: var(--ds-background);
+  --color-ds-background-1: var(--ds-background-1);
+  --color-ds-foreground: var(--ds-foreground);
+  --color-ds-foreground-muted: var(--ds-foreground-muted);
+  --color-ds-border: var(--ds-border);
+  --color-ds-surface: var(--ds-surface);
+  --color-ds-layer: var(--ds-layer);
+  --color-ds-muted: var(--ds-muted);
+  --color-ds-destructive: var(--ds-destructive);
+  --color-ds-primary: var(--ds-primary);
+  --color-ds-primary-hover: var(--ds-primary-hover);
+  --color-ds-primary-active: var(--ds-primary-active);
+  --color-ds-secondary: var(--ds-secondary);
+  --color-ds-card: var(--ds-card);
+  --color-ds-card-border: var(--ds-card-border);
+}
+
+/* Base Styling */
+@layer base {
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+/* ==========================================================
+   2. LIGHT MODE (Nilai Dasar & Sistem Pewarisan)
+   ========================================================== */
+:root {
+  /* --- TOKENS DASAR (ROOT) --- */
+  --background: #ffffff;
+  --background-1: #f8fafc;
+  --foreground: #0f172a;
+  --foreground-muted: #64748b;
+  --border: #e2e8f0;
+  --surface: #f1f5f9;
+  --layer: #ffffff;
+  --muted: #f8fafc;
+  --destructive: #ef4444;
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --primary-active: #1d4ed8;
+  --secondary: #1e293b;
+  --card: #ffffff;
+  --card-border: #e2e8f0;
+
+  /* --- PEWARISAN AUTH --- */
+  --auth-background: var(--background);
+  --auth-background-1: var(--background-1);
+  --auth-foreground: var(--foreground);
+  --auth-foreground-muted: var(--foreground-muted);
+  --auth-border: var(--border);
+  --auth-surface: var(--surface);
+  --auth-layer: var(--layer);
+  --auth-muted: var(--muted);
+  --auth-destructive: var(--destructive);
+  --auth-primary: var(--primary);
+  --auth-primary-hover: var(--primary-hover);
+  --auth-primary-active: var(--primary-active);
+  --auth-secondary: var(--secondary);
+  --auth-card: var(--card);
+  --auth-card-border: var(--card-border);
+
+  /* --- PEWARISAN DASHBOARD --- */
+  --ds-background: var(--background);
+  --ds-background-1: var(--background-1);
+  --ds-foreground: var(--foreground);
+  --ds-foreground-muted: var(--foreground-muted);
+  --ds-border: var(--border);
+  --ds-surface: var(--surface);
+  --ds-layer: var(--layer);
+  --ds-muted: var(--muted);
+  --ds-destructive: var(--destructive);
+  --ds-primary: var(--primary);
+  --ds-primary-hover: var(--primary-hover);
+  --ds-primary-active: var(--primary-active);
+  --ds-secondary: var(--secondary);
+  --ds-card: var(--card);
+  --ds-card-border: var(--card-border);
+}
+
+/* ==========================================================
+   3. DARK MODE 
+   ========================================================== */
+.dark {
+  /* --- TOKENS DASAR (ROOT) --- */
+  --background: #0f172a;
+  --background-1: #020617;
+  --foreground: #f8fafc;
+  --foreground-muted: #94a3b8;
+  --border: #334155;
+  --surface: #1e293b;
+  --layer: #0f172a;
+  --muted: #1e293b;
+  --destructive: #f87171;
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-active: #93c5fd;
+  --secondary: #f8fafc;
+  --card: #1e293b;
+  --card-border: #334155;
+
+  /* (Kustomisasi spesifik ds- atau auth- untuk Dark Mode dapat ditambahkan di sini) */
+}
